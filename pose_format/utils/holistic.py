@@ -171,7 +171,7 @@ def process_holistic(frames: list, fps: float, w: int, h: int, kinect=None, prog
 
         datas.append(data)
         confs.append(conf)
-    writer.close()
+    #writer.close()
 
     pose_body_data = np.expand_dims(np.stack(datas), axis=1)
     pose_body_conf = np.expand_dims(np.stack(confs), axis=1)
